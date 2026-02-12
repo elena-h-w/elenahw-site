@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900">
+    <main className="min-h-screen bg-white text-neutral-900 antialiased">
       <div className="mx-auto max-w-3xl px-6 py-16">
         {/* Top row */}
         <div className="flex items-center justify-between">
@@ -50,9 +50,38 @@ export default function Home() {
           </div>
         </div>
 
+         <hr className="my-12 border-neutral-200" />
+
+                {/* About */}
+                <section>
+          <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
+            About
+          </h2>
+
+          <div className="mt-6 space-y-4 text-sm leading-6 text-neutral-700">
+            <p>
+              I’m a marketing leader with a background in financial services,
+              now building at the intersection of AI, product, and growth.
+            </p>
+            <p>
+              Over the past several years, I’ve led global product marketing,
+              GTM strategy, and lifecycle initiatives across complex, high-trust
+              markets. More recently, I’ve been prototyping AI-powered tools
+              using modern AI-assisted workflows (&quot;vibe coding&quot;) and LLM APIs
+              to better understand how AI products are built, shipped, and scaled.
+            </p>
+            <p>
+              I’m particularly interested in how structured systems, model
+              economics, and product mechanics translate into sustained adoption.
+              My goal is to bridge technical capability with clear positioning,
+              distribution strategy, and measurable impact.
+            </p>
+          </div>
+        </section>
+
         <hr className="my-12 border-neutral-200" />
 
-        {/* Selected Work */}
+        {/* Featured Project */}
         <section>
           <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
             Featured Project
@@ -63,6 +92,24 @@ export default function Home() {
             <p className="mt-1 text-sm text-neutral-600">
               AI-powered narrative system for structured impact tracking
             </p>
+            <div className="mt-3 flex flex-wrap gap-4 text-sm">
+  <a
+    className="text-blue-600 hover:underline underline-offset-4"
+    href="https://impactlogger.vercel.app/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Live demo
+  </a>
+  <a
+    className="text-blue-600 hover:underline underline-offset-4"
+    href="https://github.com/elena-h-w/impactlogger"
+    target="_blank"
+    rel="noreferrer"
+  >
+    GitHub repo
+  </a>
+</div>
 
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
               <li>
@@ -136,6 +183,42 @@ export default function Home() {
             <li>Bias calibration tooling</li>
             <li>AI-assisted structured workflows</li>
           </ul>
+        </section>
+
+        <hr className="my-12 border-neutral-200" />
+
+        {/* CTA */}
+        <section>
+          <div className="rounded-xl border border-neutral-200 bg-white p-6">
+            <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
+              Let’s Connect
+            </h2>
+            <p className="mt-4 text-sm leading-6 text-neutral-700">
+              I’m exploring roles in AI product marketing and product-led growth,
+              particularly within AI-native teams.
+            </p>
+            <p className="mt-3 text-sm leading-6 text-neutral-700">
+              If you’re building AI products and value operators who combine product
+              thinking, GTM strategy, and hands-on AI experimentation, I’d love to connect.
+            </p>
+
+            <div className="mt-5 flex flex-wrap gap-4 text-sm">
+              <a
+                className="text-blue-600 hover:underline underline-offset-4"
+                href="https://www.linkedin.com/in/elenawang/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Message me on LinkedIn
+              </a>
+              <a
+                className="text-blue-600 hover:underline underline-offset-4"
+                href="mailto:elenawong1031@gmail.com"
+              >
+                Email me
+              </a>
+            </div>
+          </div>
         </section>
 
         <footer className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-neutral-200 pt-8 text-sm text-neutral-600">
