@@ -1,65 +1,171 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-white text-neutral-900">
+      <div className="mx-auto max-w-3xl px-6 py-16">
+        {/* Top row */}
+        <div className="flex items-center justify-between">
+          <p className="text-sm font-medium text-neutral-700">Elena Wang</p>
+        </div>
+
+        {/* Hero */}
+        <div className="mt-12">
+          <p className="text-sm text-neutral-600">
+            Marketing Director · Product Marketing &amp; GTM
           </p>
+
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+            I build AI-powered tools and translate them into growth.
+          </h1>
+
+          <p className="mt-6 text-base leading-7 text-neutral-700">
+            Marketing leader with hands-on experience prototyping AI products
+            using AI-assisted workflows (&quot;vibe coding&quot;), Claude API,
+            GitHub, and Vercel. I focus on structured systems, product iteration,
+            and inference economics.
+          </p>
+
+          <div className="mt-6 flex flex-wrap gap-4 text-sm">
+            <a
+              className="text-blue-600 hover:underline underline-offset-4"
+              href="https://github.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="text-blue-600 hover:underline underline-offset-4"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              className="text-blue-600 hover:underline underline-offset-4"
+              href="mailto:youremail@example.com"
+            >
+              Email
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        <hr className="my-12 border-neutral-200" />
+
+        {/* Selected Work */}
+        <section>
+          <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
+            Selected Work
+          </h2>
+
+          <div className="mt-6 rounded-xl border border-neutral-200 p-6">
+            <h3 className="text-lg font-semibold">Impact Logger</h3>
+            <p className="mt-1 text-sm text-neutral-600">
+              AI-powered narrative system for structured impact tracking
+            </p>
+
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
+              <li>
+                Explored how structured logs can be transformed into
+                performance-ready narratives
+              </li>
+              <li>
+                Built V1 using Lovable and AI-assisted prototyping
+                (&quot;vibe coding&quot;)
+              </li>
+              <li>
+                Transitioned to Claude API integration for improved output
+                control
+              </li>
+              <li>Deployed via GitHub and Vercel</li>
+              <li>
+                Key insight: single-pass LLM prompts fail without multi-step
+                abstraction
+              </li>
+              <li>
+                Constraint discovered: inference cost makes naive LLM usage
+                unsustainable at scale
+              </li>
+            </ul>
+
+            <p className="mt-4 text-sm text-neutral-700">
+              This project deepened my thinking around AI product architecture,
+              cost tradeoffs, and stateful system design.
+            </p>
+
+            <div className="mt-4 flex flex-wrap gap-2">
+              {["Lovable", "Claude API", "GitHub", "Vercel"].map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full bg-neutral-100 px-3 py-1 text-xs text-neutral-700"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <hr className="my-12 border-neutral-200" />
+
+        {/* How I Think */}
+        <section>
+          <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
+            How I Think About AI Products
+          </h2>
+
+          <ul className="mt-6 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
+            <li>AI features fail without structured input systems.</li>
+            <li>Inference cost is a product constraint, not an afterthought.</li>
+            <li>Stateful systems outperform one-shot prompts.</li>
+            <li>AI is most powerful when embedded in real workflows.</li>
+            <li>Product mechanics and distribution evolve together.</li>
+          </ul>
+        </section>
+
+        <hr className="my-12 border-neutral-200" />
+
+        {/* Currently Exploring */}
+        <section>
+          <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
+            Currently Exploring
+          </h2>
+
+          <ul className="mt-6 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
+            <li>Probabilistic decision systems</li>
+            <li>Bias calibration tooling</li>
+            <li>AI-assisted structured workflows</li>
+          </ul>
+        </section>
+
+        <footer className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-neutral-200 pt-8 text-sm text-neutral-600">
+          <p>© {new Date().getFullYear()} Elena Wang</p>
+          <div className="flex gap-4">
+            <a
+              className="text-neutral-600 hover:text-neutral-900"
+              href="https://github.com/elena-h-w"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="text-neutral-600 hover:text-neutral-900"
+              href="https://www.linkedin.com/in/elenawang/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              className="text-neutral-600 hover:text-neutral-900"
+              href="mailto:elenawong1031@gmail.com"
+            >
+              Email
+            </a>
+          </div>
+        </footer>
+      </div>
+    </main>
   );
 }
