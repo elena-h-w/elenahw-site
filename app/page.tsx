@@ -18,10 +18,10 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 text-base leading-7 text-neutral-700">
-            Marketing leader with hands-on experience prototyping AI products
-            using AI-assisted workflows (&quot;vibe coding&quot;), Claude API,
-            GitHub, and Vercel. I focus on structured systems, product iteration,
-            and inference economics.
+          Product marketing leader building and shipping AI-powered workflows 
+          to understand how technical capability translates into adoption, usage, 
+          and revenue growth. I focus on structured systems, iteration, and 
+          the real-world tradeoffs that shape AI product success.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4 text-sm">
