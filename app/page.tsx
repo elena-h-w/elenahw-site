@@ -124,17 +124,19 @@ export default function Home() {
 
             <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
               <li>
-                Explored how structured logs can be transformed into
-                performance-ready narratives
-              </li>
-              <li>
-                Built V1 using Lovable and AI-assisted prototyping
+                Built V1 using Lovable and AI-assisted prototyping 
                 (&quot;vibe coding&quot;)
               </li>
               <li>
-                Transitioned to Claude API integration for improved output
-                control
+                Rebuilt from Lovable prototype using React, TypeScript, and 
+                Supabase for persistent data and auth
               </li>
+              <li>
+                Integrated Claude API for improved output control and multi-step 
+                narrative generation
+              </li>
+              <li>Integrated PostHog for usage and engagement analytics to track 
+                adoption patterns and inform iteration</li>
               <li>Deployed via GitHub and Vercel</li>
               <li>
                 Key insight: single-pass LLM prompts fail without multi-step
@@ -152,7 +154,7 @@ export default function Home() {
             </p>
 
             <div className="mt-4 flex flex-wrap gap-2">
-              {["Lovable", "Claude API", "GitHub", "Vercel"].map((t) => (
+              {["Claude API", "React", "TypeScript", "Supabase", "PostHog", "Vercel", "GitHub"].map((t) => (
                 <span
                   key={t}
                   className="rounded-full bg-neutral-100 px-3 py-1 text-xs text-neutral-700"
