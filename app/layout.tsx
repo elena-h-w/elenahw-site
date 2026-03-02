@@ -89,6 +89,18 @@ export default function RootLayout({
           }}
         />
 
+        <script
+         type="application/ld+json"
+         dangerouslySetInnerHTML={{
+           __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Elena Wang",
+            url: "https://www.elenahw.com",
+      }),
+    }}
+  />
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-HGTQYQZN1C"
           strategy="afterInteractive"

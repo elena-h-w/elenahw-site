@@ -10,7 +10,7 @@ export default function Home() {
         {/* Hero */}
         <div className="mt-12">
           <p className="text-sm text-neutral-600">
-            Marketing Director · Product Marketing &amp; GTM
+            Product Marketing & GTM Leader · AI Product Builder
           </p>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -18,7 +18,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 text-base leading-7 text-neutral-700">
-          Product marketing leader building and shipping AI-powered workflows 
+          Product marketing & GTM leader building and shipping AI-powered workflows 
           to understand how technical capability translates into adoption, usage, 
           and revenue growth. I focus on structured systems, iteration, and 
           the real-world tradeoffs that shape AI product success.
@@ -92,10 +92,10 @@ export default function Home() {
 
         <hr className="my-12 border-neutral-200" />
 
-        {/* Featured Project */}
+        {/* What I've Built */}
         <section>
           <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
-            Featured Project
+            What I've Built
           </h2>
 
           <div className="mt-6 rounded-xl border border-neutral-200 p-6">
