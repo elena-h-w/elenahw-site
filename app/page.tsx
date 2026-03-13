@@ -98,6 +98,53 @@ export default function Home() {
             What I've Built
           </h2>
 
+{/* Waylena Project */}
+<div className="mt-8 rounded-xl border border-neutral-200 p-6">
+  <h3 className="text-lg font-semibold">Waylena</h3>
+  <p className="mt-1 text-sm text-neutral-600">
+    Mobile-first networking app for professionals
+  </p>
+  <div className="mt-3 flex flex-wrap gap-4 text-sm">
+    <a
+      className="text-blue-600 hover:underline underline-offset-4"
+      href="https://www.waylena.com/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Live site
+    </a>
+  </div>
+
+  <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
+    <li>
+      Built iOS app from scratch using Expo/React Native, Supabase, and Mixpanel
+    </li>
+    <li>
+      Designed conversation-centric UX with multi-select topic tagging, follow-up 
+      reminders, and networking insights
+    </li>
+    <li>Launched beta with external testers and structured feedback survey</li>
+    <li>Deployed marketing site with Kit email capture and Google Analytics</li>
+    <li>App Store submission in progress; Android to follow</li>
+  </ul>
+  <p className="mt-4 text-sm text-neutral-700">
+        This project pushed me into mobile product development — navigating app 
+        build pipelines, native UX conventions, and the end-to-end process of 
+        shipping to real users on device.
+            </p>
+
+  <div className="mt-4 flex flex-wrap gap-2">
+    {["Expo", "React Native", "Supabase", "Mixpanel", "Vercel", "GitHub"].map((t) => (
+      <span
+        key={t}
+        className="rounded-full bg-neutral-100 px-3 py-1 text-xs text-neutral-700"
+      >
+        {t}
+      </span>
+    ))}
+  </div>
+</div>
+
           <div className="mt-6 rounded-xl border border-neutral-200 p-6">
             <h3 className="text-lg font-semibold">Impact Logger</h3>
             <p className="mt-1 text-sm text-neutral-600">
@@ -168,20 +215,42 @@ export default function Home() {
 
         <hr className="my-12 border-neutral-200" />
 
-        {/* How I Think */}
-        <section>
-          <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
-            How I Think About AI Products
-          </h2>
+       {/* Product & Growth Strategy */}
+<section>
+  <h2 className="text-sm font-semibold tracking-wide text-neutral-900">
+    My Product & Growth Strategy
+  </h2>
 
-          <ul className="mt-6 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
-            <li>AI features fail without structured input systems.</li>
-            <li>Inference cost is a product constraint, not an afterthought.</li>
-            <li>Stateful systems outperform one-shot prompts.</li>
-            <li>AI is most powerful when embedded in real workflows.</li>
-            <li>Product mechanics and distribution evolve together.</li>
-          </ul>
-        </section>
+  <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-500">AI & Systems</h3>
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
+        <li>AI features fail without structured input systems.</li>
+        <li>Inference cost is a product constraint, not an afterthought.</li>
+        <li>Stateful systems outperform one-shot prompts.</li>
+        <li>AI is most powerful when embedded in real workflows.</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-500">Mobile & Networking</h3>
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
+        <li>Networking utility is built on the follow-up, not the connection.</li>
+        <li>Mobile friction is the enemy of data quality and user habit.</li>
+        <li>Beta testing validates the "aha moment," not just the code.</li>
+        <li>Successful products focus on retention loops over vanity metrics.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div className="mt-8 border-l-2 border-blue-600 pl-4">
+    <p className="text-sm font-semibold text-neutral-900">
+      Ultimately, I believe product mechanics and distribution must evolve 
+      together—technical capability only matters if the distribution model 
+      is built into the product's DNA.
+    </p>
+  </div>
+</section>
 
         <hr className="my-12 border-neutral-200" />
 
