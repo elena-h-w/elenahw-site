@@ -14,7 +14,7 @@ export default function Home() {
           </p>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-            I build AI-powered tools and translate them into growth.
+            I build AI-powered products and translate them into  adoption and growth.
           </h1>
 
           <p className="mt-6 text-base leading-7 text-neutral-700">
