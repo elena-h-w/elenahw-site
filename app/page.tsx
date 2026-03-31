@@ -117,7 +117,7 @@ export default function Home() {
 
   <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
     <li>
-      Built iOS app from scratch using Expo/React Native, Supabase, and Mixpanel
+      Built iOS app from scratch using Expo/React Native, Supabase, and PostHog
     </li>
     <li>
       Designed conversation-centric UX with multi-select topic tagging, follow-up 
@@ -134,7 +134,7 @@ export default function Home() {
             </p>
 
   <div className="mt-4 flex flex-wrap gap-2">
-    {["Expo", "React Native", "Supabase", "Mixpanel", "Vercel", "GitHub"].map((t) => (
+    {["Expo", "React Native", "Supabase", "PostHog", "Vercel", "GitHub"].map((t) => (
       <span
         key={t}
         className="rounded-full bg-neutral-100 px-3 py-1 text-xs text-neutral-700"
