@@ -1,9 +1,22 @@
+"use client";
+
+import { useState } from "react";
+
 type NavProps = {
   activePage?: "home" | "writing";
 };
 
 export default function Nav({ activePage = "home" }: NavProps) {
+  const [open, setOpen] = useState(false);
   const base = activePage === "writing" ? "/" : "";
+
+  const links = [
+    { label: "About", href: `${base}/#about` },
+    { label: "Product", href: `${base}/#product` },
+    { label: "Strategy", href: `${base}/#strategy` },
+    { label: "Writing", href: "/writing" },
+    { label: "Contact", href: `${base}/#contact` },
+  ];
 
   return (
     <nav className="sticky top-0 z-10 bg-white/95 backdrop-blur-sm border-b border-neutral-100">
@@ -11,21 +24,67 @@ export default function Nav({ activePage = "home" }: NavProps) {
         <a href="/" className="text-sm font-medium text-neutral-900">
           Elena Wang
         </a>
+
+        {/* Desktop nav */}
         <div className="hidden sm:flex gap-4 text-sm text-neutral-500">
-          <a href={`${base}/#about`} className="hover:text-neutral-900 transition-colors">About</a>
-          <a href={`${base}/#product`} className="hover:text-neutral-900 transition-colors">Product</a>
-          <a href={`${base}/#strategy`} className="hover:text-neutral-900 transition-colors">Strategy</a>
-          <a
-            href="/writing"
-            className={activePage === "writing"
-              ? "text-neutral-900 font-medium"
-              : "hover:text-neutral-900 transition-colors"}
-          >
-            Writing
-          </a>
-          <a href={`${base}/#contact`} className="hover:text-neutral-900 transition-colors">Contact</a>
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className={
+                link.label === "Writing" && activePage === "writing"
+                  ? "text-neutral-900 font-medium"
+                  : "hover:text-neutral-900 transition-colors"
+              }
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
+
+        {/* Mobile hamburger button */}
+        <button
+          className="sm:hidden flex flex-col justify-center gap-1.5 p-1"
+          onClick={() => setOpen((prev) => !prev)}
+          aria-label={open ? "Close menu" : "Open menu"}
+        >
+          <span
+            className={`block h-0.5 w-5 bg-neutral-600 transition-transform duration-200 ${
+              open ? "translate-y-2 rotate-45" : ""
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-5 bg-neutral-600 transition-opacity duration-200 ${
+              open ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-5 bg-neutral-600 transition-transform duration-200 ${
+              open ? "-translate-y-2 -rotate-45" : ""
+            }`}
+          />
+        </button>
       </div>
+
+      {/* Mobile dropdown */}
+      {open && (
+        <div className="sm:hidden border-t border-neutral-100 bg-white px-6 py-4 flex flex-col gap-4 text-sm text-neutral-500">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className={
+                link.label === "Writing" && activePage === "writing"
+                  ? "text-neutral-900 font-medium"
+                  : "hover:text-neutral-900 transition-colors"
+              }
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
     </nav>
   );
 }
