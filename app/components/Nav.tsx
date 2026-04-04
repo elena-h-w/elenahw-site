@@ -8,14 +8,13 @@ type NavProps = {
 
 export default function Nav({ activePage = "home" }: NavProps) {
   const [open, setOpen] = useState(false);
-  const base = activePage === "writing" ? "/" : "";
 
   const links = [
-    { label: "About", href: `${base}/#about` },
-    { label: "Product", href: `${base}/#product` },
-    { label: "Strategy", href: `${base}/#strategy` },
+    { label: "About", href: "/#about" },
+    { label: "Product", href: "/#product" },
+    { label: "Strategy", href: "/#strategy" },
     { label: "Writing", href: "/writing" },
-    { label: "Contact", href: `${base}/#contact` },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
