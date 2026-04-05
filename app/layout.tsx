@@ -1,15 +1,10 @@
 import Script from "next/script";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -71,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -90,16 +85,16 @@ export default function RootLayout({
         />
 
         <script
-         type="application/ld+json"
-         dangerouslySetInnerHTML={{
-           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "Elena Wang",
-            url: "https://elenahw.com",
-      }),
-    }}
-  />
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Elena Wang",
+              url: "https://elenahw.com",
+            }),
+          }}
+        />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-HGTQYQZN1C"
