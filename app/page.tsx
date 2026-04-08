@@ -134,19 +134,27 @@ export default function Home() {
                 >
                   Live site
                 </a>
+                <a
+                  className="text-blue-600 hover:underline underline-offset-4"
+                  href="https://apps.apple.com/us/app/waylena-networking-tracker/id6760172380"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  App Store
+                </a>
               </div>
 
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-neutral-700">
                 <li>
-                  Built iOS app from scratch using Expo/React Native, Supabase, and PostHog
+                  Built full-stack iOS and Android apps using Expo/React Native, Supabase, and 
+                  PostHog from concept to production
                 </li>
                 <li>
                   Designed conversation-centric UX with multi-select topic tagging, follow-up
                   reminders, and networking insights
                 </li>
-                <li>Launched beta with external testers and structured feedback survey</li>
-                <li>Deployed marketing site with Kit email capture and Google Analytics</li>
-                <li>App Store submission in progress; Android to follow</li>
+                <li>Launched on the App Store; Android in testing</li>
+                <li>Deployed marketing website (waylena.com) with Kit email capture and Google Analytics</li>
               </ul>
               <p className="mt-4 text-sm text-neutral-700">
                 This project pushed me into mobile product development — navigating app
