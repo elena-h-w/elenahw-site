@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Elena Wang",
     description:
-      "Product marketing leader building AI-powered systems and translating them into growth.",
+      "Product marketing leader building AI-powered products and translating them into growth.",
     images: ["/og.png"],
   },
   robots: {

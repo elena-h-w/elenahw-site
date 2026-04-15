@@ -15,6 +15,12 @@ export const metadata: Metadata = {
       "Writing on AI product building, go-to-market strategy, product marketing, and lessons learned along the way.",
     url: "https://elenahw.com/writing",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Writing | Elena Wang",
+    description:
+      "Writing on AI product building, go-to-market strategy, product marketing, and lessons learned along the way.",
+  },
 };
 
 const articles = [
