@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Elena Wang",
-    description: "I build AI-powered tools and translate them into growth.",
+    description: "I build AI-powered products and translate them into growth.",
     url: "https://elenahw.com",
     siteName: "Elena Wang",
     images: [
