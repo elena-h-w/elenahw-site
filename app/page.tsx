@@ -189,7 +189,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold">Impact Logger</h3>
               <p className="mt-1 text-sm text-neutral-600">
                 AI-powered web app for professionals to track their impact and generate 
-                narratives for performance reviews, promotions, role changes, and resumes.
+                narratives for performance reviews, promotions, role changes, and resumes
               </p>
               <div className="mt-3 flex flex-wrap gap-4 text-sm">
                 <a
@@ -378,12 +378,12 @@ export default function Home() {
                 Let's Connect
               </h2>
               <p className="mt-4 text-sm leading-6 text-neutral-700">
-                I'm exploring roles in AI product marketing and product-led growth,
-                particularly within AI-native teams.
+                I'm exploring senior roles in AI product marketing and product-led growth
+                where I can combine GTM strategy with hands-on product building.
               </p>
               <p className="mt-3 text-sm leading-6 text-neutral-700">
-                If you're building AI products and value marketers who combine product
-                thinking, GTM strategy, and hands-on AI experimentation, I'd love to connect.
+                If you're hiring at an AI company and value marketers who understand how
+                AI products work from the inside, I'd love to connect.
               </p>
 
               <div className="mt-5 flex flex-wrap gap-4 text-sm">
