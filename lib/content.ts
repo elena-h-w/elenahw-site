@@ -14,7 +14,7 @@ export type StrategyGroup = {
   items: string[];
 };
 
-export const nav = ["About", "Product", "Strategy", "Writing", "Contact"] as const;
+export const nav = ["About", "Product", "Reflection", "Writing", "Contact"] as const;
 
 export const name = "Elena Wang";
 

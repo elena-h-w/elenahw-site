@@ -8,10 +8,10 @@ export default function Strategy() {
     <section>
       <div style={{ maxWidth: 1320, margin: "0 auto" }}>
         <SectionHead
-          id="strategy"
+          id="reflection"
           num="03"
-          kicker="Strategy"
-          title="My product & growth strategy"
+          kicker="Reflection"
+          title="My thoughts on product & growth"
         />
         <div className="section-pad" style={{ padding: "0 56px 40px" }}>
           {groups.map((g, gi) => (

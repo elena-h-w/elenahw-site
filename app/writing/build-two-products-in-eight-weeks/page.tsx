@@ -114,7 +114,7 @@ export default function Article() {
                   textTransform: "uppercase",
                 }}
               >
-                Essay
+                Story
               </span>
             </div>
 

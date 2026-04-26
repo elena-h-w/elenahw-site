@@ -13,54 +13,9 @@ export default function ProjectCard({ p }: { p: Project }) {
         className="project-card-inner"
         style={{
           display: "grid",
-          gridTemplateColumns: "200px 1fr",
+          gridTemplateColumns: "1fr 200px",
         }}
       >
-        {/* Sidebar — stack chips */}
-        <div
-          className="project-sidebar"
-          style={{
-            padding: "32px 24px",
-            borderRight: "1px solid var(--rule)",
-            background: "var(--paper-2)",
-            display: "flex",
-            flexDirection: "column",
-            minHeight: 200,
-            borderRadius: "8px 0 0 8px",
-          }}
-        >
-          <div
-            className="mono"
-            style={{
-              fontSize: 10,
-              color: "var(--ink-faint)",
-              letterSpacing: "0.14em",
-              textTransform: "uppercase",
-              marginBottom: 10,
-            }}
-          >
-            Stack
-          </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-            {p.stack.map((s) => (
-              <span
-                key={s}
-                className="mono"
-                style={{
-                  fontSize: 10,
-                  padding: "2px 7px",
-                  background: "#fff",
-                  border: "1px solid var(--rule)",
-                  borderRadius: 3,
-                  color: "var(--ink-soft)",
-                }}
-              >
-                {s}
-              </span>
-            ))}
-          </div>
-        </div>
-
         {/* Body */}
         <div style={{ padding: 32 }}>
           {/* Name + links */}
@@ -147,6 +102,51 @@ export default function ProjectCard({ p }: { p: Project }) {
           >
             {p.reflection}
           </p>
+        </div>
+
+        {/* Sidebar — stack chips */}
+        <div
+          className="project-sidebar"
+          style={{
+            padding: "32px 24px",
+            borderLeft: "1px solid var(--rule)",
+            background: "var(--paper-2)",
+            display: "flex",
+            flexDirection: "column",
+            minHeight: 200,
+            borderRadius: "0 8px 8px 0",
+          }}
+        >
+          <div
+            className="mono"
+            style={{
+              fontSize: 10,
+              color: "var(--ink-faint)",
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              marginBottom: 10,
+            }}
+          >
+            Stack
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
+            {p.stack.map((s) => (
+              <span
+                key={s}
+                className="mono"
+                style={{
+                  fontSize: 10,
+                  padding: "2px 7px",
+                  background: "#fff",
+                  border: "1px solid var(--rule)",
+                  borderRadius: 3,
+                  color: "var(--ink-soft)",
+                }}
+              >
+                {s}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </article>

@@ -11,7 +11,7 @@ export default function Writing() {
           id="writing"
           num="04"
           kicker="Writing"
-          title="My thoughts & stories"
+          title="My articles & stories"
           right={
             <a
               href="/writing"
@@ -53,7 +53,7 @@ export default function Writing() {
                   textTransform: "uppercase",
                 }}
               >
-                Essay
+                Story
               </span>
             </div>
 
