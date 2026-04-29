@@ -51,7 +51,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/elenawang/"
+              href="https://www.linkedin.com/in/elenawang"
               target="_blank"
               rel="noreferrer"
               className="cta-primary"

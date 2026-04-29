@@ -28,10 +28,10 @@ export const heroSub =
 
 export const socials: { label: string; href: string }[] = [
   { label: "Email",     href: "mailto:elenawong1031@gmail.com" },
-  { label: "LinkedIn",  href: "https://www.linkedin.com/in/elenawang/" },
+  { label: "LinkedIn",  href: "https://www.linkedin.com/in/elenawang" },
   { label: "X",         href: "https://x.com/Elena_H_W" },
-  { label: "GitHub",    href: "https://github.com/elena-h-w/" },
-  { label: "Instagram", href: "https://www.instagram.com/elena.h.w/" },
+  { label: "GitHub",    href: "https://github.com/elena-h-w" },
+  { label: "Instagram", href: "https://www.instagram.com/elena.h.w" },
 ];
 
 export const about: string[] = [
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     name: "Waylena",
     tag: "Mobile networking tracker app for professionals to log career conversations and follow up",
     links: [
-      { label: "Live site",   href: "https://waylena.com/" },
+      { label: "Live site",   href: "https://waylena.com" },
       { label: "App Store",   href: "https://apps.apple.com/us/app/waylena-networking-tracker/id6760172380" },
       { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.elenahw.Waylena" },
     ],
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     name: "Impact Logger",
     tag: "AI-powered web app for professionals to track their impact and generate narratives for performance reviews, promotions, role changes, and resumes",
     links: [
-      { label: "Live site", href: "https://impactlogger.vercel.app/" },
+      { label: "Live site", href: "https://impactlogger.vercel.app" },
     ],
     bullets: [
       "Rebuilt from Lovable prototype using React, TypeScript, and Supabase for persistent data and auth",
